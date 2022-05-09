@@ -1,0 +1,245 @@
+.wrapper {
+    width: 440px;
+    height: 296px;
+    border-top-left-radius: 10px;
+    background-color: rgb(59, 59, 71);
+    color: rgba(255, 255, 255, 255);
+}
+
+.header {
+    width: 440px;
+    height: 32px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(171, 175, 187);
+}
+
+.header__name {
+    margin-left: 16px;
+    margin-top: 9px;
+}
+
+.header__name_text {
+    -unity-font-style: bold;
+    color: rgba(35, 35, 49, 255);
+}
+
+.bonus-panel {
+    height: 32px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom-width: 0.2px;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.bonus-panel__border {
+    height: 16px;
+    width: 1px;
+    background-color: rgba(224, 224, 224, 255);
+}
+
+.bonus {
+    width: 96px;
+    height: 32px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bonus_active {
+    border-bottom-right-radius: 10px;
+    background-color: rgba(69, 70, 83, 255);
+}
+
+.bonus__icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+.bonus__icon_authority {
+    background-image: url('project://database/Assets/Image/iconBonuses-Authority.png?fileID=2800000&guid=90b3bf820f6b4ef4cb5d81f83a83b5c9&type=3#iconBonuses-Authority');
+}
+
+.bonus__icon_driver {
+    background-image: url('project://database/Assets/Image/iconBonuses-Driver.png?fileID=2800000&guid=46aa0b05e801d4c4591e41c27f59ad95&type=3#iconBonuses-Driver');
+}
+
+.bonus__icon_timer {
+    background-image: url('project://database/Assets/Image/iInProgress.png?fileID=2800000&guid=e59c5ad50e43eb54a9ed8f77362db8f6&type=3#iInProgress');
+}
+
+.bonus__icon_tires {
+    background-image: url('project://database/Assets/Image/iconBonuses-Tires.png?fileID=2800000&guid=e23e12d432b9f9641879da05800cdcaa&type=3#iconBonuses-Tires');
+}
+
+.bonus__icon_engine {
+    background-image: url('project://database/Assets/Image/iconBonuses-Engine.png?fileID=2800000&guid=d4e1d0ae3399943449c28bb762e1119b&type=3#iconBonuses-Engine');
+}
+
+.content {
+    border-top-color: rgba(0, 0, 0, 0.05);
+    border-top-width: 3px;
+}
+
+.content__border {
+    width: 408px;
+    height: 1px;
+    background-color: rgba(196, 196, 196, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    height: 74px;
+    padding-left: 32px;
+    padding-right: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.row__name {
+    margin-right: auto;
+}
+
+.row__name_bold {
+    -unity-font-style: bold;
+}
+
+.button {
+    width: 104px;
+    height: 42px;
+    margin-left: 24px;
+    background-color: rgba(35, 35, 49, 0.5);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    flex-direction: row;
+}
+
+.button-image {
+    height: 42px;
+    width: 42px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-left-color: rgba(224, 224, 224, 255);
+    border-right-color: rgba(224, 224, 224, 255);
+    border-top-color: rgba(224, 224, 224, 255);
+    border-bottom-color: rgba(224, 224, 224, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-image__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.button-image__icon_helmet {
+    background-image: url('project://database/Assets/Image/RaceOrders.png?fileID=2800000&guid=986a904382706894483a3727fcb26271&type=3#RaceOrders');
+}
+
+.button-image__icon_un-helmet {
+    background-image: url('project://database/Assets/Image/RaceOrders1.png?fileID=2800000&guid=737c5b402af2b4e42b28809813df92cf&type=3#RaceOrders1');
+}
+
+.button-image__icon_tires {
+    background-image: url('project://database/Assets/Image/RaceOrders2.png?fileID=2800000&guid=d76979bf3a999e44592381443b00764f&type=3#RaceOrders2');
+}
+
+.button-image__icon_un-tires {
+    background-image: url('project://database/Assets/Image/RaceOrders%20(1).png?fileID=2800000&guid=5bf060cdf03d0634f92e8439e11ec09a&type=3#RaceOrders (1)');
+}
+
+.button-image__icon_speedometer {
+    background-image: url('project://database/Assets/Image/RaceOrders23.png?fileID=2800000&guid=676b9eaf89951a6479f75ea923a9d4ac&type=3#RaceOrders23');
+}
+
+.button-image__icon_un-speedometer {
+    background-image: url('project://database/Assets/Image/RaceOrders%20(3).png?fileID=2800000&guid=7b3f746613763fa4b97cbaf0c2122339&type=3#RaceOrders (3)');
+}
+
+.button-info {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50px;
+    height: 42px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+    flex-basis: 49px;
+}
+
+.button-info__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.button-info__value {
+}
+
+.blocked {
+    background-color: rgba(255, 100, 100, 0.2);
+    color: rgba(35, 35, 49, 255);
+    opacity: 0.8;
+}
+
+.blocked_no-bonus {
+    opacity: 0.8;
+    color: rgba(255, 100, 100, 255);
+}
+
+.active {
+    background-color: rgba(171, 233, 126, 0.5);
+    color: rgba(35, 35, 49, 255);
+}
+
+.active .button-image {
+    border-left-color: rgb(171, 233, 126);
+    border-right-color: rgb(171, 233, 126);
+    border-top-color: rgb(171, 233, 126);
+    border-bottom-color: rgb(171, 233, 126);
+    background-color: rgba(69, 70, 83, 255);
+}
+
+.unactive {
+    opacity: 0.5;
+}
+
+.default {
+}
+
+.default:hover .button-image {
+    background-color: rgba(89, 90, 105, 255);
+    border-left-color: rgba(0, 0, 0, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.default:focus .button-image {
+    background-color: rgb(89, 90, 105);
+    border-left-color: rgba(171, 175, 187, 255);
+    border-right-color: rgba(171, 175, 187, 255);
+    border-top-color: rgba(171, 175, 187, 255);
+    border-bottom-color: rgba(171, 175, 187, 255);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+}

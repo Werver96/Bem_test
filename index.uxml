@@ -1,0 +1,99 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=be61c6b7456d97f4fa39cac20d6ddc5b&amp;type=3#style" />
+    <ui:VisualElement name="wrapper" class="body wrapper">
+        <ui:VisualElement name="header" class="header">
+            <ui:VisualElement name="header__name" class="header_elem header__elem header__name">
+                <ui:Label text="Команды пилоту" display-tooltip-when-elided="true" name="header__name_text" class="header__elem_text header__name_text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="bonus-panel" class="bonus-panel">
+            <ui:VisualElement name="bonus" class="bonus bonus_active">
+                <ui:IMGUIContainer name="bonus__icon" class="bonus__icon bonus__icon_authority" />
+                <ui:Label text="100" display-tooltip-when-elided="true" name="bonus__value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="bonus" class="bonus">
+                <ui:IMGUIContainer name="bonus__icon" class="bonus__icon bonus__icon_driver" />
+                <ui:Label text="100" display-tooltip-when-elided="true" name="bonus__value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="border" class="bonus-panel__border" />
+            <ui:VisualElement name="bonus" class="bonus">
+                <ui:IMGUIContainer name="bonus__icon" class="bonus__icon bonus__icon_tires" />
+                <ui:Label text="58" display-tooltip-when-elided="true" name="bonus__value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="border" class="bonus-panel__border" />
+            <ui:VisualElement name="bonus" class="bonus">
+                <ui:IMGUIContainer name="bonus__icon" class="bonus__icon bonus__icon_engine" />
+                <ui:Label text="58" display-tooltip-when-elided="true" name="bonus__value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="content" class="content">
+            <ui:VisualElement name="row" class="row">
+                <ui:Label text="Обгон" display-tooltip-when-elided="true" name="row__name" class="row__name row__name_bold" />
+                <ui:VisualElement name="button" class="button default">
+                    <ui:VisualElement name="button-image" class="button-image">
+                        <ui:IMGUIContainer name="button-image__icon" class="button-image__icon button-image__icon_helmet" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-info" class="button-info">
+                        <ui:IMGUIContainer name="button-info__icon" class="button-info__icon bonus__icon_driver" />
+                        <ui:Label text="50" display-tooltip-when-elided="true" name="button-info__value" />
+                        <ui:IMGUIContainer name="button-info__icon" class="button-info__icon bonus__icon_authority" />
+                        <ui:Label text="56" display-tooltip-when-elided="true" name="button-info__value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="button" class="button blocked">
+                    <ui:VisualElement name="button-image" class="button-image">
+                        <ui:IMGUIContainer name="button-image__icon" class="button-image__icon button-image__icon_un-helmet" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-info" class="button-info">
+                        <ui:IMGUIContainer name="button-info__icon" class="button-info__icon bonus__icon_timer" />
+                        <ui:Label text="0:25" display-tooltip-when-elided="true" name="button-info__value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="content__border" class="content__border" />
+            <ui:VisualElement name="row" class="row">
+                <ui:Label text="Шины" display-tooltip-when-elided="true" name="row__name" class="row__name row__name_bold" />
+                <ui:VisualElement name="button" class="button default">
+                    <ui:VisualElement name="button-image" class="button-image">
+                        <ui:IMGUIContainer name="button-image__icon" class="button-image__icon button-image__icon_tires" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-info" class="button-info">
+                        <ui:IMGUIContainer name="button-info__icon" class="button-info__icon bonus__icon_tires" />
+                        <ui:Label text="50" display-tooltip-when-elided="true" name="button-info__value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="button" class="button blocked_no-bonus">
+                    <ui:VisualElement name="button-image" class="button-image">
+                        <ui:IMGUIContainer name="button-image__icon" class="button-image__icon button-image__icon_un-tires" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-info" class="button-info">
+                        <ui:IMGUIContainer name="button-info__icon" class="button-info__icon bonus__icon_tires" />
+                        <ui:Label text="80" display-tooltip-when-elided="true" name="button-info__value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="content__border" class="content__border" />
+            <ui:VisualElement name="row" class="row">
+                <ui:Label text="Двигатель" display-tooltip-when-elided="true" name="row__name" class="row__name row__name_bold" />
+                <ui:VisualElement name="button" class="button unactive">
+                    <ui:VisualElement name="button-image" class="button-image">
+                        <ui:IMGUIContainer name="button-image__icon" class="button-image__icon button-image__icon_speedometer" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-info" class="button-info">
+                        <ui:IMGUIContainer name="button-info__icon" class="button-info__icon bonus__icon_tires" />
+                        <ui:Label text="50" display-tooltip-when-elided="true" name="button-info__value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="button" class="button active">
+                    <ui:VisualElement name="button-image" class="button-image">
+                        <ui:IMGUIContainer name="button-image__icon" class="button-image__icon button-image__icon_un-speedometer" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="button-info" class="button-info">
+                        <ui:IMGUIContainer name="button-info__icon" class="button-info__icon bonus__icon_timer" />
+                        <ui:Label text="0:25" display-tooltip-when-elided="true" name="button-info__value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
